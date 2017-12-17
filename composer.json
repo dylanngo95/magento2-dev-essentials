@@ -262,5 +262,11 @@
             "Magento\\TestFramework\\Utility\\": "dev/tests/static/framework/Magento/TestFramework/Utility/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "repositories": {
+        "magento": {
+            "type": "composer",
+            "url": "http://packages.magento.com"
+        }
+    }
 }
