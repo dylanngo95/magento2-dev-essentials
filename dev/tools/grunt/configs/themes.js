@@ -50,5 +50,16 @@ module.exports = {
             'css/styles'
         ],
         dsl: 'less'
+    },
+    compstore: {
+        area: 'frontend',
+        name: 'Packt/compstore',
+        locale: 'en_US',
+        files: [
+            'css/styles-m',
+            'css/styles-l',
+            'css/source/compstore'
+        ],
+        dsl: 'less'
     }
 };
