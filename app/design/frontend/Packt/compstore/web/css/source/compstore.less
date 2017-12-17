@@ -3,3 +3,29 @@
 body {
   background: @color-compstore;
 }
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+  body {
+    background: @color-compstore;
+  }
+  .widget .block-promo img{
+    height: 600px;
+  }
+  .products-grid .product-item {
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__s) {
+  body {
+    background: @color-compstore;
+  }
+  .widget .block-promo img {
+    height: 600px;
+  }
+  .products-grid .product-item{
+    width: 100%;
+    display: inline-block;
+  }
+}
