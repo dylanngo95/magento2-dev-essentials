@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>TweetsAbout Module</title>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Packt\TweetsAbout\Block\Index" template="Packt_TweetsAbout::index.phtml">
+                <arguments>
+                    <argument name="urlMagento" xsi:type="url" path="tweetsabout/magento" />
+                    <argument name="urlPHP" xsi:type="url" path="tweetsabout/php" />
+                    <argument name="urlPackt" xsi:type="url" path="tweetsabout/packt" />
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

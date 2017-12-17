@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>TweetsAbout #Packtpub</title>
+        <css src="Packt_TweetsAbout::css/source/module.css" />
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Packt\TweetsAbout\Block\Tweets" template="Packt_TweetsAbout::tweets.phtml">
+                <arguments>
+                    <argument name="hashtag" xsi:type="string">#packtpub</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

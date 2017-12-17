@@ -1,0 +1,21 @@
+<?php
+/**
+ * @var $block \Packt\TweetsAbout\Block\Tweets
+ */
+?>
+
+<?php foreach ($block->getTweets() as $tweet) : ?>
+<p class="tweet">
+    <a href="<?php echo $tweet->user->url ?>">
+        <img src="<?php echo $tweet->user->profile_image_url ?>" alt="profile">
+    </a>
+    <b>Created: </b><?php echo $tweet->created_at ?>
+    <br />
+    <br />
+
+    <a href="<?php echo $block->getTweetUrl($tweet) ?>" target="_blank">
+        <?php echo $tweet->text ?>
+    </a>
+</p>
+<hr />
+<?php endforeach ?>
